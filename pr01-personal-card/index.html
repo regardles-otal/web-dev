@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark">
+  <title>Personal Card · P-24</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="render.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="page-shell">
+    <p class="eyebrow">P-24 · Practical 01</p>
+
+    <article class="profile-card" aria-labelledby="profile-name">
+      <header class="profile-header">
+        <div class="avatar" aria-hidden="true">JS</div>
+        <div>
+          <p class="group" data-field="group">Waiting for app.js</p>
+          <h1 id="profile-name" data-field="fullName">Personal Card</h1>
+          <p class="specialty" data-field="specialty">Complete the starter data</p>
+        </div>
+      </header>
+
+      <p class="intro" data-field="intro">
+        Your generated introduction will appear here.
+      </p>
+
+      <dl class="stats" aria-label="Study workload">
+        <div>
+          <dt>Hours per week</dt>
+          <dd data-field="weeklyHours">—</dd>
+        </div>
+        <div>
+          <dt>Semester weeks</dt>
+          <dd data-field="semesterWeeks">—</dd>
+        </div>
+        <div>
+          <dt>Semester hours</dt>
+          <dd data-field="semesterHours">—</dd>
+        </div>
+      </dl>
+
+      <footer class="profile-footer">
+        <span class="status-dot" aria-hidden="true"></span>
+        JavaScript is connected
+      </footer>
+    </article>
+  </main>
+</body>
+</html>

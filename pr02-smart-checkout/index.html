@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark">
+  <title>Smart Checkout · P-24</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+  <script src="checkout-ui.js" defer></script>
+</head>
+<body>
+  <main class="page-shell">
+    <section class="checkout" aria-labelledby="checkout-title">
+      <header>
+        <p class="eyebrow">P-24 · Practical 02</p>
+        <h1 id="checkout-title">Smart Checkout</h1>
+        <p class="subtitle">One function. Five pricing rules. Predictable result.</p>
+      </header>
+
+      <form id="checkout-form" novalidate>
+        <label>
+          Subtotal, UAH
+          <input id="subtotal" name="subtotal" type="number" min="0" step="0.01" value="500">
+        </label>
+
+        <label>
+          Delivery
+          <select id="delivery" name="delivery">
+            <option value="pickup">Pickup</option>
+            <option value="standard" selected>Standard</option>
+            <option value="express">Express</option>
+          </select>
+        </label>
+
+        <label class="check-row">
+          <input id="student" name="student" type="checkbox">
+          <span>I am a student</span>
+        </label>
+
+        <button type="submit">Calculate total</button>
+      </form>
+
+      <section class="result" id="result" aria-live="polite">
+        <p class="result-state" id="result-state">Implement <code>calculateCheckout</code>, then try a scenario.</p>
+
+        <dl class="breakdown" id="breakdown" hidden>
+          <div><dt>Subtotal</dt><dd data-field="subtotal">—</dd></div>
+          <div><dt>Discount</dt><dd data-field="discountAmount">—</dd></div>
+          <div><dt>After discount</dt><dd data-field="discountedSubtotal">—</dd></div>
+          <div><dt>Delivery</dt><dd data-field="deliveryFee">—</dd></div>
+          <div class="total"><dt>Total</dt><dd data-field="total">—</dd></div>
+        </dl>
+      </section>
+    </section>
+  </main>
+</body>
+</html>

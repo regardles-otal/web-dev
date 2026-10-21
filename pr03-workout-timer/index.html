@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark">
+  <title>Workout Timer Core · P-24</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+  <script src="timer-ui.js" defer></script>
+</head>
+<body>
+  <main class="page-shell">
+    <section class="timer" aria-labelledby="timer-title">
+      <header>
+        <p class="eyebrow">P-24 · Practical 03</p>
+        <h1 id="timer-title">Workout Timer Core</h1>
+        <p class="subtitle">Build a predictable work/rest sequence with loops and functions.</p>
+      </header>
+
+      <form id="timer-form" novalidate>
+        <label>Rounds<input id="rounds" type="number" min="1" max="20" value="3"></label>
+        <label>Work, seconds<input id="work" type="number" min="5" max="3600" value="30"></label>
+        <label>Rest, seconds<input id="rest" type="number" min="0" max="1800" value="10"></label>
+        <button type="submit">Build workout</button>
+      </form>
+
+      <section class="result" aria-live="polite">
+        <p id="result-state">Implement both functions, then build a workout.</p>
+        <div id="summary" hidden>
+          <strong id="total">00:00</strong>
+          <span>total duration</span>
+        </div>
+        <ol id="steps"></ol>
+      </section>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "p24-web-practicals",
+  "version": "1.0.0",
+  "private": true,
+  "description": "One repository for all P-24 JavaScript and TypeScript practicals",
+  "type": "module",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "jsdom": "29.1.1",
+    "typescript": "7.0.2",
+    "vite": "8.2.2",
+    "vitest": "5.0.0"
+  }
+}

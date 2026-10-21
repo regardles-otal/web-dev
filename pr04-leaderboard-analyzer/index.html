@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaderboard Analyzer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <p class="eyebrow">P-24 · Practical 04</p>
+      <h1>Leaderboard Analyzer</h1>
+      <p>Transform a set of raw player scores into a clear, deterministic ranking.</p>
+      <button id="analyze" type="button">Analyze sample data</button>
+    </header>
+
+    <p id="status" class="status">Implement <code>analyzeLeaderboard</code> in <code>app.js</code>, then try again.</p>
+
+    <section id="summary" hidden>
+      <div class="metrics">
+        <article><span>Players</span><strong id="player-count">—</strong></article>
+        <article><span>Class average</span><strong id="class-average">—</strong></article>
+        <article><span>Highest score</span><strong id="highest-score">—</strong></article>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Rank</th><th>Player</th><th>Total</th><th>Average</th><th>Best</th></tr></thead>
+          <tbody id="leaderboard-body"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+  <script src="leaderboard-ui.js"></script>
+</body>
+</html>
